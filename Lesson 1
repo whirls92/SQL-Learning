@@ -1,0 +1,10 @@
+CREATE TABLE pricelist (id INTEGER PRIMARY KEY,Item_Name TEXT, Price REAL,Quantity REAL);
+
+-- Inserting values to pricelist
+INSERT INTO pricelist VALUES (1,"Bread",2,5);
+INSERT INTO pricelist (Item_Name,Price,Quantity) Values ("Cake",3,7);
+INSERT INTO pricelist (Item_Name,Price,Quantity) Values ("Pudding",4,5);
+INSERT INTO pricelist (Item_Name,Price,Quantity) Values ("Fruits",6,2);
+
+-- Selecting Data
+SELECT Item_Name,Price,Quantity FROM pricelist WHERE Price > 3;
